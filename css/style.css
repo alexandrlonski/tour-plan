@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+header {
+  background-size: contain;
+}
+/*# sourceMappingURL=style.css.map */
