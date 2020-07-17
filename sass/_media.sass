@@ -49,8 +49,31 @@
       &__line
         width: 16px
         height: 1px
-        background-color: $text-color      
+        background-color: $text-color 
+
+.stars
+  flex-basis: auto   
+.hotel
+  padding-top: 1px
+  padding-bottom: 40px
+  &-wrapper
+    justify-content: space-between
+  &-info
+    &__text
+      width: 100%
+    &__name
+      flex-basis: 100%
+      margin-top: 10px
+    &__rating
+      display: none
+    &__offer 
+      order: -1
+      margin-left: 0           
 
 @media (max-width: 480px)
   .logo
     width: 99px
+
+@media (max-width: 320px)
+  .container
+    max-width: 280px
