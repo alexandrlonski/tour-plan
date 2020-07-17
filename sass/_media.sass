@@ -37,7 +37,7 @@
     &-button
       display: flex
       width: 16px
-      height: 11px
+      height: 11px   
       padding: 0
       align-items: center
       justify-content: space-between
@@ -51,24 +51,26 @@
         height: 1px
         background-color: $text-color 
 
-.stars
-  flex-basis: auto   
-.hotel
-  padding-top: 1px
-  padding-bottom: 40px
-  &-wrapper
-    justify-content: space-between
-  &-info
-    &__text
-      width: 100%
-    &__name
-      flex-basis: 100%
-      margin-top: 10px
-    &__rating
-      display: none
-    &__offer 
-      order: -1
-      margin-left: 0           
+  .stars
+    flex-basis: auto
+  .hotel
+    padding-top: 1px
+    padding-bottom: 40px
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        flex-basis: 100%
+        margin-top: 10px
+      &__rating
+        display: none
+      &__offer 
+        order: -1
+        margin-left: 0
+      &__discription
+        width: 95%
 
 @media (max-width: 480px)
   .logo
