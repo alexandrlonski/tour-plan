@@ -26,6 +26,13 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+  &-grid
+    display: flex  
+    justify-content: space-between
+  &-next-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
 .stars
   flex-basis: 100%
 .offer
@@ -64,11 +71,11 @@
     background-repeat: no-repeat
     background-size: 10px
     background-position: center
-    &--next
+    &_next
       right: 18px
       background-image: url(../img/arrow-next.svg)
      
-    &--prev
+    &_prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
 .swiper-container 
@@ -84,3 +91,89 @@
     top: 0
     z-index: 10
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+.booking
+  font-family: Nunito
+  border-radius: 8px
+  width: 350px
+  min-height: 210px
+  padding: 28px
+  background-color: $dark
+  color: $light
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+ 
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+ 
+  &-room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 8px
+  &__description
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: $light
+  &__heading
+   
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+  &__num
+    margin-left: 8px
+  &-button
+    width: 100%
+    min-height: 45px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: inherit
+    background-color: $primary
+    border: none
+    cursor: pointer
+    border-radius: 4px 
+.map
+  width: 347px
+  height: 213px
+  &-iframe
+    width: 347px
+    height: 213px
+    border: none 
+    border-radius: 10px
+    
