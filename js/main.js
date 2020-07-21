@@ -19,3 +19,19 @@ var mySwiper = new Swiper('.swiper-container', {
 
 
 })
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+    center: [7.838196, 98.298813],
+    zoom: 14
+  });
+  var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+      type: "Point", // тип геометрии - точка
+      coordinates: [7.838196, 98.298813], // координаты точки
+    }
+  });
+
+  myMap.geoObjects.add(myGeoObject);
+}
