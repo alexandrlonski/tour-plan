@@ -1301,5 +1301,8 @@ template {
     margin-left: auto;
     margin-right: auto;
   }
+  .reviews-slider__text {
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
