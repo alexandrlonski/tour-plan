@@ -57,5 +57,5 @@ function init() {
   myMap.geoObjects.add(myGeoObject);
 }
 $('.parallax-window').parallax({
-  imageSrc: '../img/newsletter-bg.jpg'
+  imageSrc: 'img/newsletter-bg.jpg'
 });
