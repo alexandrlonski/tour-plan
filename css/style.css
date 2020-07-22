@@ -806,7 +806,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .slider {
+  .hotel__slider {
     width: 590px;
   }
   .swiper-slide__image {
@@ -857,7 +857,7 @@ template {
   .hotel__slider {
     margin-bottom: 30px;
   }
-  .slider {
+  .hotel__slider {
     width: 100%;
   }
   .booking {
@@ -935,7 +935,7 @@ template {
   .hotel-info__discription {
     width: 95%;
   }
-  .slider {
+  .hotel__slider {
     height: 350px;
   }
   .hotel-next-block {
@@ -972,11 +972,11 @@ template {
   .container {
     max-width: 280px;
   }
-  .slider {
-    height: 180px;
-  }
   .hotel-next-block {
     min-height: 406px;
+  }
+  .hotel__slider {
+    height: 180px;
   }
   .map {
     height: 173px;
