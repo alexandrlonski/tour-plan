@@ -11,8 +11,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
-  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=823070aa-f419-4691-8ada-4d7009885beb&lang=ru_RU"></script>
 </head>
 
 <body>
@@ -121,29 +120,26 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slider-1.jpg" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slider-2.webp" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slider-3.webp" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slider-4.jpeg" alt="" />
-              </div>
+        <div class="swiper-container hotel-slider hotel__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slider-1.jpg" alt="" />
             </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button_prev"></button>
-            <button class="slider-button slider-button_next"></button>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slider-2.webp" alt="" />
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slider-3.webp" alt="" />
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slider-4.jpeg" alt="" />
+            </div>
           </div>
-          <!-- /.swiper-container -->
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button_prev"></button>
+          <button class="hotel-slider__button hotel-slider__button_next"></button>
         </div>
-        <!-- /.slider -->
+        <!-- /.swiper-container -->
         <div class="hotel-next-block">
           <div class="booking">
             <div class="booking__info">
@@ -203,6 +199,108 @@
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people thinks about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/review-avatar-1.jpg" alt="Image: review-avatar" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  Megan Fox
+                </h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and
+                polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to
+                3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was
+                good and support of the staff was also very nice. Location is not good as per atmosphere, it is very
+                nearby most of the popular places but self location in a narrow street is not good. Overall it was a
+                good experience and could recommend. </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide  -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/review-avatar-2.jpg" alt="Image: review-avatar" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  Alex Gnom
+                </h3>
+                <span class="reviews-slider__date">Stayed 12 Jun, 2017</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum
+                deserunt, doloremque debitis maxime, voluptatibus autem quos commodi voluptatem, tenetur unde dolorum
+                modi alias est explicabo hic facilis perspiciatis? Consequatur. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Praesentium magnam aliquid exercitationem commodi harum pariatur. Sit accusantium
+                aliquam et quidem repudiandae voluptas saepe, illo veniam illum ipsam sunt eligendi! Laborum. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae incidunt tempore eligendi totam.
+                Adipisci laboriosam nisi vel, delectus voluptates maxime odio, autem incidunt at maiores quam.
+                Doloribus, adipisci quibusdam. </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide  -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/review-avatar-3.jpg" alt="Image: review-avatar" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">
+                  John Doc
+                </h3>
+                <span class="reviews-slider__date">Stayed 25 Dec, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                </div>
+                <!-- /.reviews-slider__rating -->
+
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quasi
+                reiciendis quas alias, accusantium id saepe quam. Adipisci nisi fuga quis reprehenderit itaque, aut
+                commodi iure impedit voluptas tempore rerum! </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide  -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button_prev"></button>
+        <button class="reviews-slider__button reviews-slider__button_next"></button>
+        <!-- /.swiper-buttons -->
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+
   </section>
 
   <script src="js/swiper-bundle.min.js"></script>
