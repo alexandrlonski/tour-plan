@@ -56,3 +56,6 @@ function init() {
 
   myMap.geoObjects.add(myGeoObject);
 }
+$('.parallax-window').parallax({
+  imageSrc: '../img/newsletter-bg.jpg'
+});
