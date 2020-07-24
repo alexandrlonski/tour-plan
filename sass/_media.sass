@@ -176,8 +176,12 @@
 
     &-card
       max-width: 100%
+      &__title
+        font-size: 25px
+        line-height: 30px
     &__image
       height: 350px
+    
      
         
    
@@ -217,6 +221,12 @@
       margin-bottom: 42px
   .card
     width: 100%    
+@media (max-width: 420px)
+  .packages
+    &-big-card
+      grid-template-rows: 40% 60%
+
+      
 
   
 @media (max-width: 320px)
@@ -244,5 +254,16 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 50px
-            
-        
+  .packages
+    &-big-card
+      grid-template-rows: 35% 65%    
+    &-card
+      &__footer
+        display: flex
+        flex-direction: column
+        align-items: start
+      &__new-price
+        margin-bottom: 30px  
+      &__button 
+        width: 100%  
+     
