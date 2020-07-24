@@ -67,7 +67,11 @@
       margin-bottom: 50px
   .card
     width: 48.4%
-    height: 255px         
+    height: 255px  
+  .packages
+    &-wrapper
+      grid-template: 32% 32% 32%/ 50% 50%
+      column-gap: 20px
 
 @media (max-width: 768px)
   .container
@@ -151,6 +155,32 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -90px
+  .packages
+    &-wrapper
+      grid-template: 10% 15% /100%
+    &-big-card
+      display: grid
+      grid-column: 1
+      grid-row: 1/3
+      grid-template-columns: 100%
+      grid-template-rows: 50% 50%
+      border-radius: 8px
+      
+    &-big
+      &-image
+        overflow: hidden
+        width: 100%
+      &__image
+        width: 100%
+        height: 100%
+
+    &-card
+      max-width: 100%
+    &__image
+      height: 350px
+     
+        
+   
           
              
 
