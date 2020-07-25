@@ -75,8 +75,14 @@
     height: 255px  
   .other-packages
     &__wrapper
-      grid-template: 32% 32% 32%/ 50% 50%
+      grid-template: 32% 32% 32%/ 48% 48%
       column-gap: 20px
+    &__title 
+    
+      margin-bottom: 50px
+  .title
+    font-size: 30px
+    line-height: 38px    
 
 @media (max-width: 768px)
   .container
@@ -161,12 +167,19 @@
           transform: translateX(50%)
           margin-right: -90px
   .other-packages
+    padding: 20px 0 30px 0
+    &__title
+      margin-bottom: 30px
     &__wrapper
-      grid-template-rows: 32% repeat(4,16%)
+      grid-template-rows: 29% repeat(4,16%)
       grid-template-columns: 100%
       column-gap: 20px
     &__block
       height: auto
+  .title
+    font-size: 24px
+    line-height: 30px
+  
   .block    
     &-big
       display: grid
