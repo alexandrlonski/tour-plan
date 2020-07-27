@@ -115,12 +115,10 @@
     line-height: 15px
     color: #E0E0E0
   &__bottom
-    display: flex
-    align-items: center
-    justify-content: space-between
-    max-width: 696px
-    margin-left: auto
-    margin-right: 0
+    display: grid
+    grid-template-columns: repeat(10, minmax( min-content, 1fr))
+    // grid-gap: 70px
+    align-items: start
     &-link
       margin-right: 3px
       font-style: normal
@@ -128,15 +126,20 @@
       font-size: 12px
       line-height: 15px
       color: $light
+  &__copyright
+    grid-column: 5 / 8
+    
   &__pay
-    width: 130px
-    display: flex
-    align-items: center
-    justify-content: space-between
-
+    grid-column: 9 / 11 
+    margin-left: auto
     &-image
+      margin-left: 5px
       width: 20px
       height: 14px
+    &-image:first-child
+      margin-left: 0
+
+       
       
 
 
