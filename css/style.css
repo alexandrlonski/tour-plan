@@ -1514,6 +1514,7 @@ template {
       flex-basis: 100%;
   max-height: 123px;
   margin-bottom: 22px;
+  resize: none;
 }
 
 .footer__button {
@@ -1535,7 +1536,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
 }
 
 .footer__bottom {
@@ -1563,11 +1564,21 @@ template {
 }
 
 .footer__pay {
-  max-width: 136px;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__pay-image {
-  width: 100%;
+  width: 20px;
+  height: 14px;
 }
 
 @media (max-width: 1200px) {
