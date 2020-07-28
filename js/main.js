@@ -62,7 +62,6 @@ $('.parallax-window').parallax({
 
 var menuButton = document.querySelector(".menu-button")
 menuButton.addEventListener("click", function () {
-  console.log("клик");
   document.querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom_visible")
 })
