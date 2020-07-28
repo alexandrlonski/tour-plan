@@ -2120,6 +2120,12 @@ template {
     grid-row: 7;
     grid-colum: 1;
   }
+  .footer__title_inline {
+    margin: 0 43px 0 0;
+  }
+  .footer__title_mb-3 {
+    margin-bottom: 15px;
+  }
   .footer-bottom {
     display: -ms-grid;
     display: grid;
@@ -2150,12 +2156,6 @@ template {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-  }
-  .ul__title_inline {
-    margin: 0 43px 0 0;
-  }
-  .ul__title_mb-3 {
-    margin-bottom: 15px;
   }
 }
 
