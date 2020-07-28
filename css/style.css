@@ -1539,47 +1539,73 @@ template {
   color: #E0E0E0;
 }
 
-.footer__bottom {
+.footer-bottom {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[10];
-      grid-template-columns: repeat(10, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(10, minmax(min-content, 1fr));
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: 1fr/repeat(3, 1fr);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
 }
 
-.footer__bottom-link {
-  margin-right: 3px;
+.footer-bottom__leftside {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+.footer-bottom__rightside {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ul-links {
+  display: -ms-grid;
+  display: grid;
+  grid-template-row: 1fr;
+  -ms-grid-columns: 60px 103px 110px;
+      grid-template-columns: 60px 103px 110px;
+}
+
+.ul-links__link {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #ffffff;
 }
 
-.footer__copyright {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 3;
-  grid-column: 5 / 8;
+.ul-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: (minmax(28px, 1fr))[5];
+      grid-template: 1fr/repeat(5, minmax(28px, 1fr));
 }
 
-.footer__pay {
-  -ms-grid-column: 9;
-  -ms-grid-column-span: 2;
-  grid-column: 9 / 11;
-  margin-left: auto;
+.ul-images__item {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.footer__pay-image {
-  margin-left: 5px;
-  width: 20px;
-  height: 14px;
-}
-
-.footer__pay-image:first-child {
-  margin-left: 0;
+.ul-images__image {
+  max-width: 22px;
+  max-height: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -1747,16 +1773,25 @@ template {
     grid-row: 4;
     grid-column: span 5;
   }
-  .footer__copyright {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-    grid-column: 1 / 7;
+  .footer-bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template: 1fr/repeat(2, 1fr);
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
-  .footer__pay {
-    -ms-grid-column: 7;
-    -ms-grid-column-span: 4;
-    grid-column: 7 / 11;
-    margin-left: auto;
+  .footer-bottom__leftside {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin: 0;
   }
 }
 
@@ -2085,33 +2120,41 @@ template {
     grid-row: 7;
     grid-colum: 1;
   }
-  .footer__bottom {
+  .footer-bottom {
     display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 2fr;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+        grid-template: 2fr / 1fr;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
   }
-  .footer__copyright {
-    -ms-grid-column: 1;
-    grid-column: 1;
-    -ms-grid-row: 1;
-    grid-row: 1;
+  .footer-bottom__leftside {
     margin-bottom: 10px;
   }
-  .footer__pay {
-    -ms-grid-column: 1;
-    grid-column: 1;
+  .footer-bottom__rightside {
     -ms-grid-row: 2;
-    grid-row: 2;
-    margin-left: 0;
+        grid-row-start: 2;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-grid-row-align: center;
+        align-self: center;
   }
-  .footer__title_inline {
+  .ul-images__item {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .ul__title_inline {
     margin: 0 43px 0 0;
   }
-  .footer__title_mb-3 {
+  .ul__title_mb-3 {
     margin-bottom: 15px;
   }
 }

@@ -114,30 +114,43 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-  &__bottom
+  &-bottom
     display: grid
-    grid-template-columns: repeat(10, minmax( min-content, 1fr))
-    // grid-gap: 70px
+    grid-template: 1fr / repeat(3, 1fr)
     align-items: start
-    &-link
-      margin-right: 3px
+    
+    &__leftside
+      grid-column-start: 2
+      margin-left: auto
+      margin-right: 45px
+    &__rightside
+      display: grid
+      justify-content: flex-end 
+      align-self: center
+.ul
+  &-links
+    display: grid
+    grid-template-row: 1fr 
+    grid-template-columns: 60px 103px 110px
+    
+    &__link
+      display: grid
+      justify-content: flex-end
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
-      color: $light
-  &__copyright
-    grid-column: 5 / 8
-    
-  &__pay
-    grid-column: 9 / 11 
-    margin-left: auto
-    &-image
-      margin-left: 5px
-      width: 20px
-      height: 14px
-    &-image:first-child
-      margin-left: 0
+  &-images
+    display: grid
+    grid-template: 1fr / repeat(5, minmax(28px, 1fr)) 
+    &__item
+      display: grid
+      justify-content: flex-end
+      
+    &__image
+      max-width: 22px
+      max-height: 14px   
+
 
        
       

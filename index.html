@@ -706,7 +706,7 @@
           <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
           <form action="#" class="form footer__form">
             <input type="text" placeholder="Your Full Name*" class="input footer__input" />
-            <input type="number" placeholder="Phone Number*" class="input footer__input" />
+            <input type="tel" placeholder="Phone Number*" class="input footer__input" />
             <textarea class="footer__message" placeholder="Message" cols="30" rows="10"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
@@ -715,19 +715,36 @@
         <!-- /.footer__contact-form -->
       </div>
       <!-- /.footer-wrapper-->
-      <div class="footer__bottom">
-        <div class="footer__copyright">
-          <a href="#" class="footer__link footer__bottom-link">Disclaimer</a>
-          <a href="#" class="footer__link footer__bottom-link">Conditions of use</a>
-          <a href="#" class="footer__link footer__bottom-link">Cancellation policy</a>
+      <div class="footer-bottom">
+        <div class="footer-bottom__leftside">
+          <ul class="footer__ul ul-links">
+            <li class="ul-links__item">
+              <a href="#" class="footer__link ul-links__link">Disclaimer</a>
+            </li>
+            <li class="ul-links__item"><a href="#" class="footer__link ul-links__link">Conditions of use</a>
+            </li>
+            <li class="ul-links__item"><a href="#" class="footer__link ul-links__link">Cancellation policy</a>
+            </li>
+          </ul>
+          <!-- /.ul-links -->
         </div>
-        <div class="footer__pay">
-          <img class="footer__pay-image" src="img/footter/pay-images/amex.png" alt="Image:amex" />
-          <img class="footer__pay-image" src="img/footter/pay-images/apple.png" alt="Image:apple" />
-          <img class="footer__pay-image" src="img/footter/pay-images/amazon.png" alt="Image:amazon" />
-          <img class="footer__pay-image" src="img/footter/pay-images/paypal.png" alt="Image:paypal" />
-          <img class="footer__pay-image" src="img/footter/pay-images/master-card.png" alt="Image:master-card" />
+        <!-- /.footer-bottom__leftside -->
+        <div class="footer-bottom__rightside">
+          <ul class="footer__ul ul-images">
+            <li class="ul-images__item"><img src="img/footter/pay-images/amex.png" alt="Image:amex"
+                class="ul-images__image"></li>
+            <li class="ul-images__item"><img src="img/footter/pay-images/apple.png" alt="Image:apple"
+                class="ul-images__image"></li>
+            <li class="ul-images__item"><img src="img/footter/pay-images/amazon.png" alt="Image:amazon"
+                class="ul-images__image"></li>
+            <li class="ul-images__item"><img src="img/footter/pay-images/paypal.png" alt="Image:paypal"
+                class="ul-images__image"></li>
+            <li class="ul-images__item"><img src="img/footter/pay-images/master-card.png" alt="Image:master-card"
+                class="ul-images__image"></li>
+          </ul>
+          <!-- /.ul-images -->
         </div>
+        <!-- /.footer-bottom__rightside -->
       </div>
     </div>
     <!-- /.container -->

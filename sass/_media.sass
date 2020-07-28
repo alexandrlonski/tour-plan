@@ -117,12 +117,16 @@
       &-form
         grid-row: 4  
         grid-column: span 5 
-    &__copyright
-      grid-column: 1 / 7
-    
-    &__pay
-      grid-column: 7 / 11
-      margin-left: auto
+    &-bottom
+      display: grid
+      grid-template: 1fr / repeat(2, 1fr)
+      align-items: start
+      &__leftside
+        display: grid
+        justify-content: start
+        grid-column-start: 1
+        margin: 0
+      
 
 @media (max-width: 768px)
   .container
@@ -356,21 +360,26 @@
       &-form
         grid-row: 7
         grid-colum: 1   
-    &__bottom
+    &-bottom
       display: grid
-      grid-template-columns: 1fr
+      grid-template: 2fr / 1fr
       align-items: start
-    &__copyright
-      grid-column: 1 
-      grid-row: 1
-      margin-bottom: 10px  
-    &__pay
-      grid-column: 1
-      grid-row: 2
-      
-      margin-left: 0         
-    
-      
+
+      &__leftside
+        margin-bottom: 10px
+      // grid-column-start: 1
+      // margin-left: auto
+      // margin-right: 45px
+      &__rightside
+        grid-row-start: 2
+        display: grid
+        justify-content: flex-start
+        align-self: center
+  .ul
+    &-images
+      &__item
+        display: grid
+        justify-content: start
     &__title
       &_inline
         margin: 0 43px 0 0
