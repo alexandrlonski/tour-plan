@@ -116,7 +116,7 @@
     color: #E0E0E0
   &-bottom
     display: grid
-    grid-template: 1fr / repeat(3, 1fr)
+    grid-template: 1fr / repeat(3, auto)
     align-items: start
     
     &__leftside
@@ -131,7 +131,8 @@
   &-links
     display: grid
     grid-template-row: 1fr 
-    grid-template-columns: 60px 103px 110px
+    grid-template-columns: repeat(3, auto)
+    grid-column-gap: 5px
     
     &__link
       display: grid

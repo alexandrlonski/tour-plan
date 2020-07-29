@@ -1547,8 +1547,8 @@ template {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-  -ms-grid-columns: (1fr)[3];
-      grid-template: 1fr/repeat(3, 1fr);
+  -ms-grid-columns: (auto)[3];
+      grid-template: 1fr/repeat(3, auto);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1575,8 +1575,9 @@ template {
   display: -ms-grid;
   display: grid;
   grid-template-row: 1fr;
-  -ms-grid-columns: 60px 103px 110px;
-      grid-template-columns: 60px 103px 110px;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-column-gap: 5px;
 }
 
 .ul-links__link {
@@ -1781,8 +1782,8 @@ template {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
-    -ms-grid-columns: (1fr)[2];
-        grid-template: 1fr/repeat(2, 1fr);
+    -ms-grid-columns: (auto)[2];
+        grid-template: 1fr/repeat(2, auto);
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
