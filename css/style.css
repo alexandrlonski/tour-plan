@@ -1585,8 +1585,9 @@ template {
   display: -ms-grid;
   display: grid;
   grid-template-row: 1fr;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (max-content)[3];
+      grid-template-columns: repeat(3, -webkit-max-content);
+      grid-template-columns: repeat(3, max-content);
   grid-column-gap: 5px;
 }
 
