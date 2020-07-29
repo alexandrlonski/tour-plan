@@ -2033,6 +2033,9 @@ template {
   .block-big__block-main {
     margin-bottom: 20px;
   }
+  .block-big__block-header {
+    height: auto;
+  }
   .block-small {
     display: -ms-grid;
     display: grid;
