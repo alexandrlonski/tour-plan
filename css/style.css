@@ -1152,9 +1152,11 @@ template {
 .other-packages__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (48%)[2];
-  -ms-grid-columns: (32%)[3];
-      grid-template: repeat(2, 48%)/repeat(3, 32%);
+  -ms-grid-rows: (auto)[2];
+  -ms-grid-columns: (auto)[3];
+      grid-template: repeat(2, auto)/repeat(3, auto);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1201,6 +1203,10 @@ template {
       grid-template-columns: 50% 50%;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.block-big__block-header {
+  height: 513px;
 }
 
 .block-big__block-title {
@@ -1718,9 +1724,9 @@ template {
     height: 255px;
   }
   .other-packages__wrapper {
-    -ms-grid-rows: 32% 32% 32%;
-    -ms-grid-columns: 48% 48%;
-        grid-template: 32% 32% 32%/ 48% 48%;
+    -ms-grid-rows: (auto)[3];
+    -ms-grid-columns: (auto)[2];
+        grid-template: repeat(3, auto)/repeat(2, auto);
     -webkit-column-gap: 20px;
             column-gap: 20px;
   }
@@ -1994,8 +2000,8 @@ template {
     margin-bottom: 30px;
   }
   .other-packages__wrapper {
-    -ms-grid-rows: 29% (16%)[4];
-        grid-template-rows: 29% repeat(4, 16%);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     -webkit-column-gap: 20px;
@@ -2039,7 +2045,7 @@ template {
     height: 100%;
   }
   .block-small__block-header {
-    height: 100%;
+    height: 300px;
     overflow: hidden;
     position: relative;
   }
@@ -2099,8 +2105,8 @@ template {
     width: 100%;
   }
   .other-packages__wrapper {
-    -ms-grid-rows: 540px (340px)[4];
-        grid-template-rows: 540px repeat(4, 340px);
+    -ms-grid-rows: (auto)[5];
+        grid-template-rows: repeat(5, auto);
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
@@ -2113,8 +2119,8 @@ template {
   .block-big {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 35% 65%;
-        grid-template-rows: 35% 65%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   .block-big__block-header {
     height: 200px;
@@ -2130,8 +2136,8 @@ template {
     margin-bottom: 10px;
   }
   .block-small {
-    -ms-grid-rows: 42% 58%;
-        grid-template-rows: 42% 58%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
@@ -2234,8 +2240,8 @@ template {
 
 @media (max-width: 420px) {
   .other-packages__wrapper {
-    -ms-grid-rows: 540px (340px)[4];
-        grid-template-rows: 540px repeat(4, 340px);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
@@ -2277,8 +2283,8 @@ template {
     margin-bottom: 50px;
   }
   .other-packages__wrapper {
-    -ms-grid-rows: 600px (400px)[4];
-        grid-template-rows: 600px repeat(4, 400px);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
@@ -2291,8 +2297,8 @@ template {
   .block-big {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 32% 68%;
-        grid-template-rows: 32% 68%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   .block-big__block-header {
     height: 200px;
@@ -2308,8 +2314,8 @@ template {
     margin-bottom: 10px;
   }
   .block-small {
-    -ms-grid-rows: 38% 62%;
-        grid-template-rows: 38% 62%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }

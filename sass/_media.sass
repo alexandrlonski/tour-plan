@@ -78,7 +78,7 @@
     height: 255px  
   .other-packages
     &__wrapper
-      grid-template: 32% 32% 32%/ 48% 48%
+      grid-template: repeat(3, auto)/ repeat(2, auto)
       column-gap: 20px
     &__title 
     
@@ -261,7 +261,7 @@
     &__title
       margin-bottom: 30px
     &__wrapper
-      grid-template-rows: 29% repeat(4,16%)
+      grid-template-rows: auto
       grid-template-columns: 100%
       column-gap: 20px
     &__block
@@ -292,7 +292,7 @@
         height: 100%
       &__block
         &-header
-          height: 100%
+          height: 300px
           overflow: hidden
           position: relative
   .footer
@@ -340,7 +340,7 @@
     width: 100%   
   .other-packages
     &__wrapper
-      grid-template-rows: 540px repeat(4, 340px)
+      grid-template-rows: repeat(5, auto)
       grid-template-columns: 100% 
   .block-box 
     padding: 15px      
@@ -351,7 +351,7 @@
 
     &-big
       grid-template-columns: 100%
-      grid-template-rows: 35% 65%
+      grid-template-rows: auto 
       &__block
         &-header
           height: 200px
@@ -363,7 +363,7 @@
           margin-top: 0
           margin-bottom: 10px
     &-small
-      grid-template-rows: 42% 58%
+      grid-template-rows: auto
       grid-template-columns: 100% 
       &__block
         &-list 
@@ -435,7 +435,7 @@
 @media (max-width: 420px)  
   .other-packages
     &__wrapper
-      grid-template-rows: 540px repeat(4, 340px)
+      grid-template-rows: auto
       grid-template-columns: 100% 
   .block
     &-main-text
@@ -472,7 +472,7 @@
       margin-bottom: 50px
   .other-packages
     &__wrapper
-      grid-template-rows: 600px repeat(4, 400px)
+      grid-template-rows: auto
       grid-template-columns: 100% 
   .block-box 
     padding: 15px      
@@ -483,7 +483,7 @@
 
     &-big
       grid-template-columns: 100%
-      grid-template-rows: 32% 68%
+      grid-template-rows: auto
       &__block
         &-header
           height: 200px
@@ -495,7 +495,7 @@
           margin-top: 0
           margin-bottom: 10px
     &-small
-      grid-template-rows: 38% 62%
+      grid-template-rows: auto
       grid-template-columns: 100% 
       &__block
         &-list 

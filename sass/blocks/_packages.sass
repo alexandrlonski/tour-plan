@@ -6,7 +6,8 @@
     margin-top: 0
   &__wrapper
     display: grid
-    grid-template: repeat(2, 48%) / repeat(3, 32%)
+    grid-template: repeat(2, auto) / repeat(3, auto)
+    column-gap: 20px
     justify-content: space-between
     flex-wrap: wrap
     row-gap: 30px
@@ -37,6 +38,8 @@
     border-radius: 8px
     overflow: hidden
     &__block
+      &-header
+        height: 513px
       &-title
         margin-bottom: 27px
       &-stars
