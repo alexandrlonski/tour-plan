@@ -2034,7 +2034,7 @@ template {
     margin-bottom: 20px;
   }
   .block-big__block-header {
-    height: auto;
+    height: 100%;
   }
   .block-small {
     display: -ms-grid;
