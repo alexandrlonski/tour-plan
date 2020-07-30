@@ -721,10 +721,11 @@
         <!-- /.footer__contact -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-          <form action="#" class="form footer__form">
-            <input type="text" placeholder="Your Full Name*" class="input footer__input" />
-            <input type="tel" placeholder="Phone Number*" class="input footer__input" />
-            <textarea class="footer__message" placeholder="Message" cols="30" rows="10"></textarea>
+          <form action="send.php" method="POST" class="form footer__form">
+            <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" />
+            <input type="tel" placeholder="Phone Number*" class="input footer__input" name="phone" />
+            <textarea class="footer__message" placeholder="Message" name="message">
+          </textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
