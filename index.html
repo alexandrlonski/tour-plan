@@ -424,7 +424,8 @@
         subscribe to our
         <strong class="newsletter-title__strong">Newsletter</strong>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
+      <form action="send.php" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')"
+        class="subscribe newsletter__subscribe">
         <input type="text" placeholder="Your email address" class="subscribe__input" />
         <button class="subscribe__button">
           Send
@@ -721,7 +722,8 @@
         <!-- /.footer__contact -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-          <form action="send.php" method="POST" class="form footer__form">
+          <form action="send.php" enctype="multipart/form-data" method="post" id="form"
+            onsubmit="send(event, 'send.php')" class="form footer__form">
             <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" />
             <input type="tel" placeholder="Phone Number*" class="input footer__input" name="phone" />
             <textarea class="footer__message" placeholder="Message" name="message">
