@@ -126,6 +126,9 @@
         justify-content: start
         grid-column-start: 1
         margin: 0
+  .modal
+    &__dialog
+      padding: 30px 50px
       
 
 @media (max-width: 768px)
@@ -305,8 +308,10 @@
         grid-column: span 6
       &-form
         grid-column: span 6          
- 
-
+  .modal
+    &__dialog
+      width: 60%
+      padding: 30px 50px
 @media (max-width: 576px)
   .logo 
     width: 99px 
@@ -433,6 +438,10 @@
       &__item
         display: grid
         justify-content: start
+  .modal
+    &__dialog
+      width: 80%
+      padding: 30px 30px
     
 @media (max-width: 420px)  
   .other-packages
@@ -445,6 +454,12 @@
       font-weight: normal
       font-size: 12px
       line-height: 150%   
+  .modal
+    &__dialog
+      width: 85%
+      padding: 30px 20px
+    &__button
+      width: 100%  
   
   
 @media (max-width: 320px)
@@ -525,5 +540,8 @@
     &__info
       width: 100% 
       margin-bottom: 15px 
+  .modal
+    &__dialog
+      width: 92%   
 
          
