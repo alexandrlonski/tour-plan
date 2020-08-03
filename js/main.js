@@ -1,12 +1,12 @@
 $(document).ready(function () {
-  var hotelSlider = new Swiper('.hotel-slider', {
+  var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.hotel-slider__button_next',
-      prevEl: '.hotel-slider__button_prev',
+      nextEl: ".hotel-slider__button_next",
+      prevEl: ".hotel-slider__button_prev",
     },
     // Keyboard
     keyboard: {
@@ -17,17 +17,15 @@ $(document).ready(function () {
     speed: 800,
     // grabCursor: true,
     // simulateTouch: false,
-
-
   });
-  var reviewsSlider = new Swiper('.reviews-slider', {
+  var reviewsSlider = new Swiper(".reviews-slider", {
     // Optional parameters
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.reviews-slider__button_next',
-      prevEl: '.reviews-slider__button_prev',
+      nextEl: ".reviews-slider__button_next",
+      prevEl: ".reviews-slider__button_prev",
     },
     // Keyboard
     keyboard: {
@@ -38,46 +36,45 @@ $(document).ready(function () {
     speed: 800,
     // grabCursor: true,
     // simulateTouch: false,
-
-
   });
   ymaps.ready(init);
 
   function init() {
     var myMap = new ymaps.Map("map", {
       center: [7.838196, 98.298813],
-      zoom: 14
+      zoom: 14,
     });
     var myGeoObject = new ymaps.GeoObject({
       geometry: {
         type: "Point", // тип геометрии - точка
         coordinates: [7.838196, 98.298813], // координаты точки
-      }
+      },
     });
 
     myMap.geoObjects.add(myGeoObject);
   }
-  $('.parallax-window').parallax({
-    imageSrc: 'img/newsletter-bg.jpg'
+  $(".parallax-window").parallax({
+    imageSrc: "img/newsletter-bg.jpg",
   });
 
-  var menuButton = document.querySelector(".menu-button")
+  var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
-    document.querySelector(".navbar-bottom")
-      .classList.toggle("navbar-bottom_visible")
+    document
+      .querySelector(".navbar-bottom")
+      .classList.toggle("navbar-bottom_visible");
   });
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
-  closeModalButton.on("click", closeModal)
+  closeModalButton.on("click", closeModal);
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
-  };
+  }
 
   function closeModal(event) {
     event.preventDefault();
@@ -85,9 +82,9 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
-  };
+  }
   // закрыть окно с промощью Esc
-  document.addEventListener('keydown', function (closeModal) {
+  document.addEventListener("keydown", function (closeModal) {
     if (closeModal.keyCode === 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
@@ -98,25 +95,32 @@ $(document).ready(function () {
 
   // Обработка форм
   // $('.phone').mask('+7 (999) 999-99-99');
-  $('.phone').mask('+7(999)999-99-99', {
-    'translation': {
+  $(".phone").mask("+7(999)999-99-99", {
+    translation: {
       9: {
-        pattern: /[0-9*]/
-      }
-    }
+        pattern: /[0-9*]/,
+      },
+    },
   });
   $(".form").each(function () {
     $(this).validate({
-
       errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 3,
+        },
+      },
       messages: {
         name: {
           required: "Please specify your name",
-          minlenght: "Name must be at least 3 letters"
+          minlength: jQuery.validator.format(
+            " Minimum word length {0} letters!"
+          ),
         },
         email: {
           required: "We need add your email",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
           required: " Phone is required",
