@@ -427,7 +427,7 @@
       </h2>
       <form action="send.php" method="post" class="subscribe newsletter__subscribe">
         <input type="email" placeholder="Your email address" class="subscribe__input" name="email" />
-        <button class="subscribe__button">
+        <button class="subscribe__button" name="subscription">
           Send
         </button>
       </form>
@@ -726,7 +726,7 @@
             <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" />
             <input type="tel" placeholder="Phone Number*" class="input footer__input" name="phone" />
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button" type="submit">Send</button>
+            <button class="button footer__button" type="submit" name="send-message">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -791,7 +791,7 @@
         <input type="tel" placeholder="Phone Number*" class="input modal__input" name="phone" />
         <input type="email" placeholder="Email*" class="input modal__input" name="email" />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit">Send</button>
+        <button class="button modal__button" type="submit" name="booking">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
     </div>

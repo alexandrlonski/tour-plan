@@ -2477,4 +2477,11 @@ template {
     width: 92%;
   }
 }
+
+@media (max-height: 487px) {
+  .modal__dialog {
+    height: 100vh;
+    overflow: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
