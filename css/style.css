@@ -73,6 +73,7 @@ img {
 }
 
 .invalid {
+  z-index: 0;
   color: #EC1F46;
   -webkit-animation: headShake;
           animation: headShake;
@@ -527,7 +528,7 @@ template {
   opacity: 0.6;
 }
 
-.search .user {
+.user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,7 +538,7 @@ template {
   text-decoration: none;
 }
 
-.search__avatar {
+.user__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -545,7 +546,7 @@ template {
      object-fit: cover;
 }
 
-.search__name {
+.user__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -955,6 +956,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  z-index: 1;
 }
 
 .subscribe__button {
@@ -969,6 +971,7 @@ template {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .subscribe__button:hover {
@@ -1291,7 +1294,7 @@ template {
 }
 
 .block-big__block-header {
-  height: 513px;
+  height: 520px;
 }
 
 .block-big__block-title {
@@ -2190,7 +2193,7 @@ template {
     height: 100%;
   }
   .block-small__block-header {
-    height: 300px;
+    height: 320px;
     overflow: hidden;
     position: relative;
   }
