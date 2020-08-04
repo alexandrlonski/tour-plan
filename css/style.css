@@ -1518,6 +1518,10 @@ template {
   grid-column: span 2;
 }
 
+.footer__legal {
+  margin-left: auto;
+}
+
 .footer__title {
   margin-top: 0;
   margin-bottom: 16px;
@@ -2318,6 +2322,7 @@ template {
     grid-colum: 1;
   }
   .footer__legal {
+    margin-left: 0;
     -ms-grid-row: 3;
     grid-row: 3;
     grid-colum: 1;
