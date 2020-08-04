@@ -10,6 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=823070aa-f419-4691-8ada-4d7009885beb&lang=ru_RU"></script>
 </head>
@@ -18,16 +20,18 @@
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://alexanderlonski.ru/homework/tour-plan-lesson-27/" class="logo">
+        <a href="https://alexanderlonski.ru/homework/tour-plan-lesson-27/" class="logo" data-aos="fade-right"
+          data-aos-duration="1000">
           <img src="img/header/horizontal-logo.svg" class="logo__image" alt="Logo:Best Tour Plan" />
         </a>
-        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-down"
+          data-aos-duration="1000">
           <input type="text" placeholder="Search Location" class="search__input" />
           <button class="search__button">
             <img src="img/header/search.svg" alt="Icon: search" />
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-left" data-aos-duration="1000">
           <img src="img/header/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar" />
           <span class="user__name">
             Nathan
@@ -136,7 +140,8 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="swiper-container hotel-slider hotel__slider">
+        <div class="swiper-container hotel-slider hotel__slider" data-aos="fade-right" data-aos-anchor="#example-anchor"
+          data-aos-offset="500" data-aos-duration="1000">
           <div class="swiper-wrapper">
             <div class="swiper-slide hotel-slider__item">
               <img class="hotel-slider__image" src="img/hotel/slider-1.jpg" alt="" />
@@ -157,7 +162,8 @@
         </div>
         <!-- /.swiper-container -->
         <div class="hotel-next-block">
-          <div class="booking">
+          <div class="booking" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+            data-aos-duration="1500">
             <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__start">price starts as</span>
@@ -191,10 +197,9 @@
             </button>
           </div>
           <!-- /.booking -->
-          <div class="map" id="map">
-            <!-- <iframe class="map-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.541482599968!2d98.29702851470958!3d7.838253708657157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sby!4v1595362385880!5m2!1sru!2sby">
-            </iframe> -->
+          <div class="map" id="map" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+            data-aos-duration="1000">
+
           </div>
           <!-- /.map -->
         </div>
@@ -205,9 +210,9 @@
   </section>
   <section class="other-packages">
     <div class="container">
-      <h1 class="title other-packages__title">Other Packages</h1>
+      <h1 class="title other-packages__title" data-aos="zoom-in" data-aos-duration="1000">Other Packages</h1>
       <div class="other-packages__wrapper">
-        <div class="block other-packages__block block-big">
+        <div class="block other-packages__block block-big" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-big__block-header">
             <img src="img/packages/for-card-1.jpg" alt="Image:
             LUX* Belle Mare " class="block__image block-big__image" />
@@ -260,7 +265,7 @@
           <!-- /.block-box  -->
         </div>
         <!-- /.block other-packages__block block-big-->
-        <div class="block other-packages__block block-small">
+        <div class="block other-packages__block block-small" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-small__block-header">
             <img src="img/packages/for-card-2.jpg" alt="Image:
             LUX* Belle Mare " class="block__image block-small__image" />
@@ -299,7 +304,7 @@
           <!-- /.block-box  -->
         </div>
         <!-- /.block other-packages__block block-small-->
-        <div class="block other-packages__block block-small">
+        <div class="block other-packages__block block-small" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-small__block-header">
             <img src="img/packages/for-card-3.jpg" alt="Image:
             LUX* Belle Mare " class="block__image block-small__image" />
@@ -338,7 +343,7 @@
           <!-- /.block-box  -->
         </div>
         <!-- /.block other-packages__block block-small-->
-        <div class="block other-packages__block block-small">
+        <div class="block other-packages__block block-small" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-small__block-header">
             <img src="img/packages/for-card-4.jpg" alt="Image:
             LUX* Belle Mare " class="block__image block-small__image" />
@@ -377,7 +382,7 @@
           <!-- /.block-box  -->
         </div>
         <!-- /.block other-packages__block block-small-->
-        <div class="block other-packages__block block-small">
+        <div class="block other-packages__block block-small" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-small__block-header">
             <img src="img/packages/for-card-5.jpg" alt="Image:
             LUX* Belle Mare " class="block__image block-small__image" />
@@ -420,12 +425,15 @@
     </div>
   </section>
   <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
-    <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">
+    <div class="newsletter-wrapper" data-aos-easing="ease-in-sine">>
+      <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="800"
+        data-aos-offset=" 300">
         subscribe to our
-        <strong class="newsletter-title__strong">Newsletter</strong>
+        <strong class="newsletter-title__strong" data-aos="fade-right" data-aos-duration="800"
+          data-aos-offset=" 200">Newsletter</strong>
       </h2>
-      <form action="send.php" method="post" class="form subscribe newsletter__subscribe">
+      <form action="send.php" method="post" class="form subscribe newsletter__subscribe" data-aos="fade-left"
+        data-aos-duration="800" data-aos-offset=" 100">
         <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required />
         <button class="subscribe__button" name="subscription">
           Send
@@ -548,7 +556,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="300">
           <img src="img/activities/image-1.jpg" alt="The curious corner of chamarel" class="card__image" />
           <h3 class="card__title">
             The curious corner of chamarel
@@ -558,7 +566,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="500">
           <img src="img/activities/image-2.jpg" alt="Gymkhana club golf course" class="card__image" />
           <h3 class="card__title">
             Gymkhana club golf course
@@ -568,7 +576,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="700">
           <img src="img/activities/image-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" />
           <h3 class="card__title">
             Tamarind falls hiking trip - full day
@@ -578,7 +586,7 @@
           </button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-duration="900">
           <img src="img/activities/image-4.jpg" alt="The blue marine discovery quest" class="card__image" />
           <h3 class="card__title">
             The blue marine discovery quest
@@ -597,7 +605,8 @@
     <div class="container">
       <div class="footer-wrapper">
         <!-- <div class="logo footer__logo"> -->
-        <img src="img/footter/vertical-logo.png" class="logo footer__logo" alt="logo: Best Tour Plan" />
+        <img src="img/footter/vertical-logo.png" class="logo footer__logo" alt="logo: Best Tour Plan" data-aos="zoom-in"
+          data-aos-duration="900" />
         <!-- </div> -->
         <!-- /.logo -->
         <div class="footer__list footer__categories">
@@ -757,23 +766,28 @@
         <div class="footer-bottom__rightside">
           <ul class="footer__ul ul-images">
             <li class="ul-images__item">
-              <img src="img/footter/pay-images/amex.png" alt="Image:amex" class="ul-images__image" />
+              <img src="img/footter/pay-images/amex.png" alt="Image:amex" class="ul-images__image" data-aos="fade-left"
+                data-aos-anchor="#example-anchor" data-aos-duration="200" />
             </li>
 
             <li class="ul-images__item">
-              <img src="img/footter/pay-images/apple.png" alt="Image:apple" class="ul-images__image" />
+              <img src="img/footter/pay-images/apple.png" alt="Image:apple" class="ul-images__image"
+                data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-duration="400" />
             </li>
 
             <li class="ul-images__item">
-              <img src="img/footter/pay-images/amazon.png" alt="Image:amazon" class="ul-images__image" />
+              <img src="img/footter/pay-images/amazon.png" alt="Image:amazon" class="ul-images__image"
+                data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-duration="600" />
             </li>
 
             <li class="ul-images__item">
-              <img src="img/footter/pay-images/paypal.png" alt="Image:paypal" class="ul-images__image" />
+              <img src="img/footter/pay-images/paypal.png" alt="Image:paypal" class="ul-images__image"
+                data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-duration="800" />
             </li>
 
             <li class="ul-images__item">
-              <img src="img/footter/pay-images/master-card.png" alt="Image:master-card" class="ul-images__image" />
+              <img src="img/footter/pay-images/master-card.png" alt="Image:master-card" class="ul-images__image"
+                data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-duration="1000" />
             </li>
           </ul>
           <!-- /.ul-images -->
@@ -810,6 +824,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 

@@ -110,6 +110,10 @@ $(document).ready(function () {
           required: true,
           minlength: 3,
         },
+        phone: {
+          required: true,
+          minlength: 16,
+        },
       },
       messages: {
         name: {
@@ -124,8 +128,12 @@ $(document).ready(function () {
         },
         phone: {
           required: " Phone is required",
+          minlength: jQuery.validator.format(
+            " Minimum word length {0} letters!"
+          ),
         },
       },
     });
   });
+  AOS.init();
 });

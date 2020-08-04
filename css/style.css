@@ -49,6 +49,13 @@ img {
   color: #ffffff;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .form {
@@ -67,6 +74,12 @@ img {
 
 .invalid {
   color: #EC1F46;
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -506,9 +519,15 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.user {
+.search__button:hover {
+  opacity: 0.6;
+}
+
+.search .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +537,7 @@ template {
   text-decoration: none;
 }
 
-.user__avatar {
+.search__avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -526,7 +545,7 @@ template {
      object-fit: cover;
 }
 
-.user__name {
+.search__name {
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -948,6 +967,12 @@ template {
   background-color: #EC1F46;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscribe__button:hover {
+  opacity: 0.6;
 }
 
 .reviews {
@@ -1190,6 +1215,13 @@ template {
   border-radius: 4px;
   background-color: #EC1F46;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .other-packages {
