@@ -129,7 +129,7 @@ $(document).ready(function () {
         phone: {
           required: " Phone is required",
           minlength: jQuery.validator.format(
-            " Minimum word length {0} letters!"
+            " Minimum length {0} numbers!"
           ),
         },
       },
