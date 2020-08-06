@@ -32,11 +32,7 @@
       grid-column: span 2
     &-form
       grid-column: span 2
-  &__tel
-    &-link
-      display: contents
-      text-decoration: none
-      color: #BDBDBD   
+      
   &__legal
     margin-left: auto
     
@@ -68,6 +64,10 @@
     color: $gray
     &_mb-2
       margin-bottom: 20px  
+    &-link
+      display: contents
+      text-decoration: none
+      color: #BDBDBD   
   &__icon
     &-block
       min-width: 40px
@@ -84,12 +84,19 @@
     margin-bottom: 22px
   &__input
     width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 12px
+    line-height: 15px
     &-group
       margin-bottom: 15px
       flex-basis: 49%
   &__message
     flex-basis: 100%
     margin-bottom: 22px
+    font-size: 12px
+    line-height: 15px
   
   &__info
     font-style: normal

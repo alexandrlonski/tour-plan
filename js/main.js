@@ -105,12 +105,12 @@ $(document).ready(function () {
         name: {
           required: "Please specify your name",
           minlength: jQuery.validator.format(
-            " Minimum word length {0} letters!"
+            " Minimum length {0} letters!"
           ),
         },
         email: {
           required: "We need add your email",
-          email: "Your email address must be in the format of name@domain.com",
+          email: "Email format name@domain.com",
         },
         phone: {
           required: " Phone is required",

@@ -9,7 +9,7 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link
     href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="preload" />
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -20,7 +20,8 @@
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo" data-aos="fade-right" data-aos-duration="1000">
+        <a href="https://alexanderlonski.ru/Best-tour-plan/" class="logo" data-aos="fade-right"
+          data-aos-duration="1000">
           <img src="img/header/horizontal-logo.svg" class="logo__image" alt="Logo:Best Tour Plan" />
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-down"
@@ -257,7 +258,7 @@
             <span class="block-old-price block-big__block-old-price">$ 10,500</span>
             <div class="block-footer block-big__block-footer">
               <strong class="block-new-price block-big__block-new-price">$ 8,500</strong>
-              <button class="button block-button block-big__block-button">
+              <button data-toggle="modal" class="button block-button block-big__block-button">
                 Book Now
               </button>
             </div>
@@ -296,7 +297,7 @@
             <span class="block-old-price block-small__block-old-price">$ 8,500</span>
             <div class="block-footer block-small__block-footer">
               <strong class="block-new-price block-small__block-new-price">$ 3,000</strong>
-              <button class="button block-button block-small__block-button">
+              <button data-toggle="modal" class="button block-button block-small__block-button">
                 Book Now
               </button>
             </div>
@@ -335,7 +336,7 @@
             <span class="block-old-price block-small__block-old-price">$ 10,500</span>
             <div class="block-footer block-small__block-footer">
               <strong class="block-new-price block-small__block-new-price">$ 9,500</strong>
-              <button class="button block-button block-small__block-button">
+              <button data-toggle="modal" class="button block-button block-small__block-button">
                 Book Now
               </button>
             </div>
@@ -374,7 +375,7 @@
             <span class="block-old-price block-small__block-old-price">$ 4,500</span>
             <div class="block-footer block-small__block-footer">
               <strong class="block-new-price block-small__block-new-price">$ 2,500</strong>
-              <button class="button block-button block-small__block-button">
+              <button data-toggle="modal" class="button block-button block-small__block-button">
                 Book Now
               </button>
             </div>
@@ -413,7 +414,7 @@
             <span class="block-old-price block-small__block-old-price">$ 6,500</span>
             <div class="block-footer block-small__block-footer">
               <strong class="block-new-price block-small__block-new-price">$ 3,500</strong>
-              <button class="button block-button block-small__block-button">
+              <button data-toggle="modal" class="button block-button block-small__block-button">
                 Book Now
               </button>
             </div>
@@ -431,8 +432,7 @@
         subscribe to our
         <strong class="newsletter-title__strong" data-aos="fade-right" data-aos-duration="800">Newsletter</strong>
       </h2>
-      <form action="send.php" method="post" class="form subscribe newsletter__subscribe" data-aos="fade-left"
-        data-aos-duration="800" data-aos-offset=" 100">
+      <form action="send.php" method="post" class="form subscribe newsletter__subscribe">
         <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required />
         <button class="subscribe__button" name="subscription">
           Send
@@ -559,7 +559,7 @@
           <h3 class="card__title">
             The curious corner of chamarel
           </h3>
-          <button class="card__button">
+          <button data-toggle="modal" class="card__button">
             Book Now
           </button>
         </div>
@@ -569,7 +569,7 @@
           <h3 class="card__title">
             Gymkhana club golf course
           </h3>
-          <button class="card__button">
+          <button data-toggle="modal" class="card__button">
             Book Now
           </button>
         </div>
@@ -579,7 +579,7 @@
           <h3 class="card__title">
             Tamarind falls hiking trip - full day
           </h3>
-          <button class="card__button">
+          <button data-toggle="modal" class="card__button">
             Book Now
           </button>
         </div>
@@ -589,7 +589,7 @@
           <h3 class="card__title">
             The blue marine discovery quest
           </h3>
-          <button class="card__button">
+          <button data-toggle="modal" class="card__button">
             Book Now
           </button>
         </div>
@@ -603,8 +603,9 @@
     <div class="container">
       <div class="footer-wrapper">
         <!-- <div class="logo footer__logo"> -->
-        <a href="#" class="logo footer__logo"><img src="img/footter/vertical-logo.png" alt="logo: Best Tour Plan"
-            data-aos="zoom-in" data-aos-duration="900" /></a>
+        <a href="https://alexanderlonski.ru/Best-tour-plan/" class="logo footer__logo"><img
+            src="img/footter/vertical-logo.png" alt="logo: Best Tour Plan" data-aos="zoom-in"
+            data-aos-duration="900" /></a>
         <!-- </div> -->
         <!-- /.logo -->
         <div class="footer__list footer__categories">
@@ -714,21 +715,21 @@
               </div>
 
               Tel (business hours) :
-              <a class="footer__tel-link" href="tel:269 1500">269 1500</a>
+              <a class="footer__item-link" href="tel:2691500">269 1500</a>
               <br />
               Tel (hotline) Monday - Saturday:
-              <a class="footer__tel-link" href="tel:52-56-61-38">52-56-61-38</a>
+              <a class="footer__item-link" href="tel:52-56-61-38">52-56-61-38</a>
               (08:00 am – 20:00 pm) <br />
               Tel (hotline) Sunday:
-              <a class="footer__tel-link" href="tel:52-56-61-38">52-56-61-38</a>
+              <a class="footer__item-link" href="tel:52-56-61-38">52-56-61-38</a>
               (08:00 am – 14:00 pm)
             </li>
             <li class="footer__item footer__item_mb-2">
               <div class="footer__icon-block">
                 <img src="img/footter/email.svg" alt="Icon: email" class="footer__icon" />
               </div>
+              <a class="footer__item-link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
 
-              9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United State
             </li>
           </ul>
         </div>
@@ -736,11 +737,13 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
           <form action="send.php" method="post" class="form footer__form">
-            <div class="footer__input-group">
-              <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" required />
+            <div class="footer__input-group input-group">
+              <input type="text" placeholder="Your Full Name*" class="input footer__input input_required" name="name"
+                required />
             </div>
-            <div class="footer__input-group">
-              <input type="tel" placeholder="Phone Number*" class="input footer__input phone" name="phone" required />
+            <div class="footer__input-group input-group">
+              <input type="tel" placeholder="Phone Number*" class="input footer__input input_required phone"
+                name="phone" required />
             </div>
 
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -812,9 +815,20 @@
       </a>
       <h3 class="modal__title modal__title_mb-3">Booking</h3>
       <form action="send.php" method="post" class="form modal__form">
-        <input type="text" placeholder="Your Full Name*" class="input modal__input" name="name" required />
-        <input type="tel" placeholder="Phone Number*" class="input modal__input phone" name="phone" required />
-        <input type="email" placeholder="Email*" class="input modal__input" name="email" required />
+        <div class="input-group modal__input-group">
+          <input type="text" placeholder="Your Full Name*" class="input modal__input input_required" name="name"
+            required />
+        </div>
+
+        <div class="input-group modal__input-group">
+          <input type="tel" placeholder="Phone Number*" class="input modal__input input_required phone" name="phone"
+            required />
+        </div>
+
+        <div class="input-group modal__input-group">
+          <input type="email" placeholder="Email*" class="input modal__input input_required" name="email" required />
+        </div>
+
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit" name="booking">
           Send
