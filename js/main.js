@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  var bLazy = new Blazy({
+
+  });
   var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     direction: "horizontal",
@@ -122,7 +125,10 @@ $(document).ready(function () {
     });
   });
   AOS.init();
+
+
   $(".map").mousemove(function (event) {
     $(".map__google").append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.54144461325!2d98.29703101470963!3d7.8382577086571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sby!4v1596717665190!5m2!1sru!2sby" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" class="map__google"></iframe>');
   });
+
 });
