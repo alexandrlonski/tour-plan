@@ -5,24 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Best Tour Plan - Hotel Booking</title>
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link
     href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet" />
+    rel="preload" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=823070aa-f419-4691-8ada-4d7009885beb&lang=ru_RU"></script>
 </head>
 
 <body>
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://alexanderlonski.ru/homework/tour-plan-lesson-30/" class="logo" data-aos="fade-right"
-          data-aos-duration="1000">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-duration="1000">
           <img src="img/header/horizontal-logo.svg" class="logo__image" alt="Logo:Best Tour Plan" />
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-down"
@@ -154,7 +152,7 @@
               <img class="hotel-slider__image" src="img/hotel/slider-3.webp" alt="" />
             </div>
             <div class="swiper-slide hotel-slider__item">
-              <img class="hotel-slider__image" src="img/hotel/slider-4.jpeg" alt="" />
+              <img class="hotel-slider__image" src="img/hotel/slider-4.jpg" alt="" />
             </div>
           </div>
           <!-- If we need navigation buttons -->
@@ -200,7 +198,10 @@
           <!-- /.booking -->
           <div class="map" id="map" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
             data-aos-duration="1000">
-
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101453907!3d7.83825239435222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sby!4v1596654767604!5m2!1sru!2sby"
+              width="350" height="224" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
           </div>
           <!-- /.map -->
         </div>
@@ -211,7 +212,9 @@
   </section>
   <section class="other-packages">
     <div class="container">
-      <h1 class="title other-packages__title" data-aos="zoom-in" data-aos-duration="1000">Other Packages</h1>
+      <h1 class="title other-packages__title" data-aos="zoom-in" data-aos-duration="1000">
+        Other Packages
+      </h1>
       <div class="other-packages__wrapper">
         <div class="block other-packages__block block-big" data-aos="flip-left" data-aos-duration="1000">
           <div class="block-header block-big__block-header">
@@ -426,12 +429,11 @@
     </div>
   </section>
   <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
-    <div class="newsletter-wrapper" data-aos-easing="ease-in-sine">>
-      <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="800"
-        data-aos-offset=" 300">
+    <div class="newsletter-wrapper" data-aos-easing="ease-in-sine">
+      >
+      <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="800">
         subscribe to our
-        <strong class="newsletter-title__strong" data-aos="fade-right" data-aos-duration="800"
-          data-aos-offset=" 200">Newsletter</strong>
+        <strong class="newsletter-title__strong" data-aos="fade-right" data-aos-duration="800">Newsletter</strong>
       </h2>
       <form action="send.php" method="post" class="form subscribe newsletter__subscribe" data-aos="fade-left"
         data-aos-duration="800" data-aos-offset=" 100">
@@ -440,7 +442,6 @@
           Send
         </button>
       </form>
-
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
@@ -734,14 +735,17 @@
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
           <form action="send.php" method="post" class="form footer__form">
-            <div class="footer__input-group"><input type="text" placeholder="Your Full Name*"
-                class="input footer__input" name="name" required /></div>
-            <div class="footer__input-group"><input type="tel" placeholder="Phone Number*"
-                class="input footer__input phone" name="phone" required /></div>
-
+            <div class="footer__input-group">
+              <input type="text" placeholder="Your Full Name*" class="input footer__input" name="name" required />
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" placeholder="Phone Number*" class="input footer__input phone" name="phone" required />
+            </div>
 
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-            <button class="button footer__button" type="submit" name="send-message">Send</button>
+            <button class="button footer__button" type="submit" name="send-message">
+              Send
+            </button>
             <span class="footer__info">* Required Fields</span>
           </form>
         </div>
@@ -811,7 +815,9 @@
         <input type="tel" placeholder="Phone Number*" class="input modal__input phone" name="phone" required />
         <input type="email" placeholder="Email*" class="input modal__input" name="email" required />
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button" type="submit" name="booking">Send</button>
+        <button class="button modal__button" type="submit" name="booking">
+          Send
+        </button>
         <span class="modal__info">* Required Fields</span>
       </form>
     </div>
@@ -826,6 +832,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/lazysizes.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

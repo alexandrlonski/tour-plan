@@ -37,22 +37,8 @@ $(document).ready(function () {
     // grabCursor: true,
     // simulateTouch: false,
   });
-  ymaps.ready(init);
 
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [7.838196, 98.298813],
-      zoom: 14,
-    });
-    var myGeoObject = new ymaps.GeoObject({
-      geometry: {
-        type: "Point", // тип геометрии - точка
-        coordinates: [7.838196, 98.298813], // координаты точки
-      },
-    });
 
-    myMap.geoObjects.add(myGeoObject);
-  }
   $(".parallax-window").parallax({
     imageSrc: "img/newsletter-bg.jpg",
   });
@@ -94,7 +80,7 @@ $(document).ready(function () {
   });
 
   // Обработка форм
-  // $('.phone').mask('+7 (999) 999-99-99');
+
   $(".phone").mask("+7(999)999-99-99", {
     translation: {
       9: {
