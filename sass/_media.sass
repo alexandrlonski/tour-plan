@@ -190,7 +190,7 @@
       border: none
       background-color: #fff
       outline: none
-      cursor: pointer
+      cursor: auto
 
       &__line
         width: 16px
@@ -204,6 +204,8 @@
         margin-left: 0
         margin-top: 10px
   .search
+    &__button
+      cursor: auto
     &__input
       width: 243px            
 
@@ -233,7 +235,9 @@
       flex-direction: column
       min-height: 456px
   .booking
-    width: 100%   
+    width: 100% 
+    &-button
+      cursor: auto  
   .map
     width: 100%
   .newsletter
@@ -242,6 +246,9 @@
       width: 92%
       flex-direction: column
       align-items: start
+  .subscribe
+    &__button
+      cursor: auto   
   .reviews
     &__title
       font-size: 25px
@@ -253,6 +260,7 @@
         &:before, &:after
           display: none
       &__button
+        cursor: auto
         top: 30px
         &_prev
           left: 50%
@@ -303,6 +311,11 @@
           height: 320px
           overflow: hidden
           position: relative
+    &-button
+      cursor: auto    
+  .card
+    &__button
+      cursor: auto       
   .footer
     &__input
       &-group
@@ -316,6 +329,10 @@
     &__dialog
       width: 60%
       padding: 30px 50px
+    &__close
+      cursor: auto  
+  .button
+    cursor: auto   
 @media (max-width: 576px)
   .logo 
     width: 99px 
