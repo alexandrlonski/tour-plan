@@ -109,8 +109,11 @@
       grid-row: 2 / 3 
       grid-column: span 2
     &__legal
+      
       grid-column: span 2  
     &__additional
+      width: max-content
+      margin-left: -30px
       grid-column: span 2  
     &__contact
       &-details
@@ -324,7 +327,10 @@
       &-details
         grid-column: span 6
       &-form
-        grid-column: span 6          
+        grid-column: span 6   
+    &__additional 
+      width: auto
+      margin-left: -13px
   .modal
     &__dialog
       width: 60%
@@ -421,6 +427,8 @@
       grid-row: 3
       grid-colum: 1
     &__additional
+      width: max-content
+      margin-left: 0
       grid-row: 4
       grid-colum: 1
     &__categories
