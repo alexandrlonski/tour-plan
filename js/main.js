@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var bLazy = new Blazy({
-
+    offset: 100
   });
   var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
