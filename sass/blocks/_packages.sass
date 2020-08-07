@@ -7,7 +7,7 @@
   &__wrapper
     display: grid
     grid-template: repeat(2, auto) / repeat(3, auto)
-    column-gap: 20px
+    column-gap: 30px
     justify-content: space-between
     flex-wrap: wrap
     row-gap: 30px
@@ -28,7 +28,7 @@
     font-style: normal
     font-weight: normal
     font-size: 14px
-    line-height: 160.6%
+    line-height: 161%
 
   &-big
     display: grid
@@ -39,23 +39,49 @@
     overflow: hidden
     &__block
       &-header
-        height: 520px
+        height: 500px
       &-title
         margin-bottom: 27px
       &-stars
-        margin-top: 17px  
+        font-size: 7px
+        margin-top: 19px
+        margin-bottom: 5px
 
       &-offer
         font-style: normal
         font-weight: 600
         font-size: 12px
         line-height: 15px
-        padding: 7px 11px
+        padding: 7px 21px 7px 12px
         margin-top: 26px
       &-main-text
-        margin-bottom: 40px
+        margin-bottom: 43px
       &-main
-        margin-bottom: 37px    
+        margin-bottom: 37px 
+        padding-left: 13px
+      &-list
+        &__text
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 15px
+          margin-left: 15px
+      &-old-price
+        display: block
+        margin-left: 14px
+
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+      &-new-price
+        margin-left: 14px
+        margin-top: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
   &-small
     display: grid
     grid-template-rows: auto
@@ -63,9 +89,8 @@
     overflow: hidden
     &__block
       &-offer
-        
         margin-top: 26px
-        padding: 4px 9px
+        padding: 4px 6px
         font-style: normal
         font-weight: 600
         font-size: 8px
@@ -74,10 +99,30 @@
         margin-bottom: 23px
       &-list
         margin-bottom: 24px
+        &__text
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 15px
+          margin-left: 13px
       &-header 
         height: 250px
         overflow: hidden 
         position: relative
+      &-old-price
+        display: block
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 18px
+        text-decoration-line: line-through
+      &-new-price
+        
+        margin-top: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
     &__image
       height: 100%
   &__image
@@ -95,36 +140,22 @@
     padding: 
     border-radius: 0 4px 4px 0 
   &-box
-    padding: 30px 21px 25px 32px
+    padding: 30px 22px 25px 32px
   &-title
     font-style: normal
     font-weight: bold
     font-size: 18px
-    line-height: 23px
+    line-height: 21px
     margin-top: 0
   &-list
     &__item
+      display: flex
+      align-items: center
       margin-bottom: 11px
-    &__text
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      margin-left: 15px
-  &-old-price
-    display: block
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &-new-price
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
-    margin-bottom: 7px
-    margin-top: 7px
+    
+  
+  
+    
   &-footer
     display: flex 
     flex-wrap: wrap
@@ -133,15 +164,14 @@
   &-button
     font-style: normal
     font-weight: 600
-    font-size: 14px
-    line-height: 19px
-    padding: 10px 26px
-    background-color: $primary
-    color: $light
+    font-size: 13px
+    line-height: 20px
+    padding: 10px 30px 10px 26px
+    background-color: #EC1F46
+    color: #fff
     cursor: pointer
     border: none
     border-radius: 4px
- 
 
     
 

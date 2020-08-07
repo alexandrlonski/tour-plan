@@ -91,17 +91,19 @@
     padding: 73px 0 33px 0
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-row-gap: 52px
       margin-bottom: 63px
     &__input
       &-group
-        flex-basis: 49%
+        flex-basis: 47%
     &__logo
       width: 104px
       grid-row: 1 / 2
       grid-column: span 2
     &__social
       &-network
+        margin-top: 13px
+        margin-left: -44px
         grid-row: 1 / 2 
         grid-column: span 4
         align-self: center
@@ -117,9 +119,12 @@
       grid-column: span 2  
     &__contact
       &-details
+        margin-top: 10px
         grid-row: 3
         grid-column: span 5
       &-form
+        max-width: 539px
+        margin-top: -10px
         grid-row: 4  
         grid-column: span 5 
     &-bottom
@@ -177,7 +182,7 @@
       flex-direction: column
       padding-top: 30px
       &__item
-        margin-bottom: 20px
+        margin-bottom: 18px
         &_mobile
           &_visible
             display: flex
@@ -205,12 +210,12 @@
       &_light
         color: $light
         margin-left: 0
-        margin-top: 10px
+        margin-top: 13px
   .search
     &__button
       cursor: auto
     &__input
-      width: 243px            
+      width: 248px            
 
   .stars
     flex-basis: auto
@@ -320,6 +325,10 @@
     &__button
       cursor: auto       
   .footer
+    &__social
+      &-network
+        margin-top: 0px
+        margin-left: 0px
     &__input
       &-group
         flex-basis: 100%
@@ -471,7 +480,7 @@
   .modal
     &__dialog
       width: 80%
-      padding: 30px 30px
+      padding: 30px 50px
     
 @media (max-width: 420px)  
   .other-packages
@@ -487,7 +496,7 @@
   .modal
     &__dialog
       width: 85%
-      padding: 30px 20px
+      padding: 30px 35px
     &__button
       width: 100%
   .footer    
