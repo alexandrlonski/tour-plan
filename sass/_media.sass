@@ -27,7 +27,7 @@
   .newsletter-wrapper
     max-width: 700px
   .logo
-    width: 132px  
+    width: 104px  
   .navbar
     &-top
       padding-bottom: 30px
@@ -327,8 +327,10 @@
   .footer
     &__social
       &-network
+        
         margin-top: 0px
         margin-left: 0px
+        
     &__input
       &-group
         flex-basis: 100%
@@ -429,8 +431,12 @@
       grid-colum: 1
     &__social
       &-network 
+        flex-direction: column
         grid-row: 2
         grid-colum: 1
+    &__title
+      &_inline
+        margin: 0 43px 22px 0    
     &__legal 
       margin-left: 0
       grid-row: 3
@@ -452,9 +458,7 @@
       &-form
         grid-row: 7
         grid-colum: 1 
-    &__title
-      &_inline
-        margin: 0 43px 0 0
+    
       &_mb-3
         margin-bottom: 15px      
     &-bottom
@@ -503,7 +507,7 @@
     &__social-network 
       flex-wrap: wrap
     &__title_inline
-      margin: 0 43px 0 0 
+      margin: 0 43px 22px 0 
 
 @media (max-width: 360px)  
   .footer
@@ -601,6 +605,6 @@
 @media ( max-height: 487px )
   .modal
     &__dialog
-      height: 100vh
+      height: 90vh
       overflow: auto
            
